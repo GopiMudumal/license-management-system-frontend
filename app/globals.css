@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  [data-theme="avengers"] {
+    /* Avengers Theme - Dark Blue/Black with Red & Gold accents */
+    --background: 220 30% 8%;
+    --foreground: 0 0% 98%;
+    --card: 220 25% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 84% 60%; /* Red accent */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 45 93% 47%; /* Gold accent */
+    --accent-foreground: 220 30% 8%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 0 84% 60%;
+    --radius: 0.75rem;
+    --theme-gradient: linear-gradient(135deg, hsl(0, 84%, 60%) 0%, hsl(45, 93%, 47%) 100%);
+    --theme-glow: 0 0 20px rgba(0, 84%, 60%, 0.3), 0 0 40px rgba(0, 84%, 60%, 0.1);
+  }
+
+  [data-theme="disney"] {
+    /* Disney Theme - Magical Purple/Pink with Blue accents */
+    --background: 270 30% 12%;
+    --foreground: 0 0% 98%;
+    --card: 270 25% 16%;
+    --card-foreground: 0 0% 98%;
+    --popover: 270 25% 16%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 280 70% 65%; /* Magical Purple */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 270 20% 22%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 270 20% 22%;
+    --muted-foreground: 270 10% 70%;
+    --accent: 200 80% 60%; /* Disney Blue */
+    --accent-foreground: 270 30% 12%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 270 20% 25%;
+    --input: 270 20% 25%;
+    --ring: 280 70% 65%;
+    --radius: 0.75rem;
+    --theme-gradient: linear-gradient(135deg, hsl(280, 70%, 65%) 0%, hsl(200, 80%, 60%) 100%);
+    --theme-glow: 0 0 20px rgba(280, 70%, 65%, 0.3), 0 0 40px rgba(200, 80%, 60%, 0.1);
+  }
+
+  [data-theme="powerrangers"] {
+    /* Power Rangers Theme - Bold Red/Blue/Green with Yellow accents */
+    --background: 220 40% 10%;
+    --foreground: 0 0% 98%;
+    --card: 220 35% 14%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 35% 14%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 90% 55%; /* Power Red */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 30% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 30% 20%;
+    --muted-foreground: 220 15% 70%;
+    --accent: 50 95% 50%; /* Power Yellow */
+    --accent-foreground: 220 40% 10%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 30% 25%;
+    --input: 220 30% 25%;
+    --ring: 0 90% 55%;
+    --radius: 0.75rem;
+    --theme-gradient: linear-gradient(135deg, hsl(0, 90%, 55%) 0%, hsl(200, 90%, 55%) 50%, hsl(50, 95%, 50%) 100%);
+    --theme-glow: 0 0 20px rgba(0, 90%, 55%, 0.4), 0 0 40px rgba(200, 90%, 55%, 0.2);
+  }
+
+  [data-theme="ramayan"] {
+    /* Ramayan Theme - Divine Gold/Orange with Deep Blue accents */
+    --background: 30 25% 10%;
+    --foreground: 0 0% 98%;
+    --card: 30 20% 14%;
+    --card-foreground: 0 0% 98%;
+    --popover: 30 20% 14%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 35 95% 55%; /* Divine Gold */
+    --primary-foreground: 30 25% 10%;
+    --secondary: 30 20% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 30 20% 20%;
+    --muted-foreground: 30 15% 70%;
+    --accent: 220 60% 50%; /* Divine Blue */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 20% 25%;
+    --input: 30 20% 25%;
+    --ring: 35 95% 55%;
+    --radius: 0.75rem;
+    --theme-gradient: linear-gradient(135deg, hsl(35, 95%, 55%) 0%, hsl(25, 90%, 50%) 100%);
+    --theme-glow: 0 0 20px rgba(35, 95%, 55%, 0.4), 0 0 40px rgba(25, 90%, 50%, 0.2);
+  }
+
+  [data-theme="kgf"] {
+    /* KGF Theme - Dark Gold/Black with Amber accents */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 40 95% 50%; /* KGF Gold */
+    --primary-foreground: 0 0% 5%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 30 90% 55%; /* Amber accent */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 40 95% 50%;
+    --radius: 0.75rem;
+    --theme-gradient: linear-gradient(135deg, hsl(40, 95%, 50%) 0%, hsl(30, 90%, 55%) 100%);
+    --theme-glow: 0 0 20px rgba(40, 95%, 50%, 0.5), 0 0 40px rgba(30, 90%, 55%, 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Theme-specific background patterns */
+  [data-theme="avengers"] body {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(0, 84%, 60%, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(45, 93%, 47%, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(220, 30%, 8%, 1) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  [data-theme="disney"] body {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(280, 70%, 65%, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(200, 80%, 60%, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(270, 30%, 12%, 1) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  [data-theme="powerrangers"] body {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(0, 90%, 55%, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(200, 90%, 55%, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(220, 40%, 10%, 1) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  [data-theme="ramayan"] body {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(35, 95%, 55%, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(220, 60%, 50%, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(30, 25%, 10%, 1) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  [data-theme="kgf"] body {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(40, 95%, 50%, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(30, 90%, 55%, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(0, 0%, 5%, 1) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .theme-glow {
+    box-shadow: var(--theme-glow);
+  }
+  
+  .text-gradient-theme {
+    background: var(--theme-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .border-gradient-theme {
+    border-image: var(--theme-gradient) 1;
+  }
+}
+
+/* Global Loader Animations */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translate(0, 0) scale(1); 
+    opacity: 0.6; 
+  }
+  25% { 
+    transform: translate(calc(var(--float-x, 0px) * 0.5), calc(var(--float-y, 0px) * 0.5)) scale(1.2); 
+    opacity: 0.8; 
+  }
+  50% { 
+    transform: translate(var(--float-x, 0px), var(--float-y, 0px)) scale(1.5); 
+    opacity: 1; 
+  }
+  75% { 
+    transform: translate(calc(var(--float-x, 0px) * 0.5), calc(var(--float-y, 0px) * 0.5)) scale(1.2); 
+    opacity: 0.8; 
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
